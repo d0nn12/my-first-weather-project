@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="city-search">
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-city-input"
+          />
+          <input class="search-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city">Paris</h1>
+            <p class="current-details">
+              <span class="date-time"> Saturday 15:32</span>, moderate rain
+              <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >14</span
+            ><span class="current-temperature-unit">°F</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/d0nn12" target="_blank"
+            >Donna Strasburg</a
+          >
+          and is
+          <a
+            href="https://github.com/d0nn12/weatherapp-project"
+            target="_blank"
+          >
+            on GitHub</a
+          >
+          and
+          <a href="https://www.netlify.com/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
